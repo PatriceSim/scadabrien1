@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from "react";
 import { w3cwebsocket as W3CWebSocket } from 'websocket'
 
-const socketRead = new W3CWebSocket('ws://172.30.16.144:1790/GetVariables')
+const socketRead = new W3CWebSocket('ws://172.16.30.144:1790/GetVariables')
 
 const Principale= ()=>{
 
