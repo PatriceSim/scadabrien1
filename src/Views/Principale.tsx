@@ -46,7 +46,7 @@ const Principale= ()=>{
                 <label>{returnName(9)} : {returnValue(9)}</label>
                 <label>{returnName(10)} : {returnValue(10)}</label>
                 <label>{returnName(11)} : {returnValue(11)}</label>
-                <label>{returnName(12)} : {returnValue(12)}</label>
+                
                 
             </div>
             
