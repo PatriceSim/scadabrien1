@@ -40,7 +40,7 @@ const Historique= ()=>{
 
     return(
         <div>
-            <ButtonComponent onClick={handleClick}>Test</ButtonComponent>
+            <ButtonComponent onClick={handleClick}>Validez</ButtonComponent>
             <div>
             <GridComponent
 				dataSource={data}

@@ -5,6 +5,7 @@ import {useRef} from 'react';
 import MainPage from './Views/MainPage';
 import Principale from './Views/Principale';
 import Historique from './Views/Historique';
+import Graphique from './Views/Graphique';
 
 export default function App() {
   const dockBar:any=useRef() ;
@@ -17,8 +18,12 @@ export default function App() {
         window.location.pathname = "/principale"
       }
 
-      const toggleClickInfo=()=>{
+      const toggleClickHistorique=()=>{
         window.location.pathname = "/historique"    
+      }
+
+      const toggleClickGraphique=()=>{
+        window.location.pathname = "/graphique"    
       }      
 
   return (
@@ -31,12 +36,16 @@ export default function App() {
                                     <span className="e-text" title="menu">Menu</span>
                                 </li>
                                 <li className="sidebar-item" onClick={toggleClickPrincipale}>
-                                    <span className="e-icons product"/>
+                                    <span className="e-icons principale"/>
                                     <span className="e-text" title="principale">Principale</span>
                                 </li>
-                                <li className="sidebar-item" onClick={toggleClickInfo}>
-                                    <span className="e-icons info"/>
+                                <li className="sidebar-item" onClick={toggleClickHistorique}>
+                                    <span className="e-icons historique"/>
                                     <span className="e-text" title="info">Historique</span>
+                                </li>
+                                <li className="sidebar-item" onClick={toggleClickGraphique}>
+                                    <span className="e-icons graphique"/>
+                                    <span className="e-text" title="info">Graphique</span>
                                 </li>                                
                             </ul>
                         </div>
@@ -47,6 +56,7 @@ export default function App() {
             <Route path="/" element={<MainPage/>}/>
             <Route path="/principale" element={<Principale/>}/>
             <Route path="/historique" element={<Historique/>}/>
+            <Route path="/graphique" element={<Graphique/>}/>
           </Routes>      
         </Router>                    
     </div>    

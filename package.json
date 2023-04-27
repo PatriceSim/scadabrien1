@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@syncfusion/ej2-react-buttons": "^21.1.37",
+    "@syncfusion/ej2-react-calendars": "^21.1.41",
+    "@syncfusion/ej2-react-charts": "^21.1.41",
+    "@syncfusion/ej2-react-dropdowns": "^21.1.41",
     "@syncfusion/ej2-react-grids": "^21.1.41",
     "@syncfusion/ej2-react-navigations": "^21.1.39",
     "@testing-library/jest-dom": "^5.16.5",
