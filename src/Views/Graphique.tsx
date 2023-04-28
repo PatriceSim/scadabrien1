@@ -8,7 +8,7 @@ import { isDate } from 'util/types';
 
 const Graphique =()=>{
 
-    const param = { action: '',startDate : '',endDate:''}
+    const param = { action: '',startDate : '',endDate:'',variable:{}}
     const [variables,setVariable] = useState({name:""})
     const [data,setData] = useState([])
     const [startDate,setStartDate] = useState('')
@@ -24,11 +24,13 @@ const Graphique =()=>{
   
     const fieldsVariable={text: 'name', value: 'name'}
 
-    const handleClick=()=>{
-        
-        console.log(startDate)
-        console.log(endDate)
-        console.log(selectedVariable)        
+    const handleClick= async ()=>{
+
+        param.action = 'getHistVariable'
+        param.startDate = startDate
+        param.endDate = endDate
+        param.variable = selectedVariable
+		setData(await UseCallApi(param))
     }
 
     const handleSelectedVariable = (arg:any) =>{
