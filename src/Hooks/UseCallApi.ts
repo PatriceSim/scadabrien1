@@ -19,15 +19,15 @@ const UseCallApi=async(param:any) =>{
 	if(param.action=='getHistVariable') {
 
 		let params = {
-            sensorsID: param.sensorsID,
-            startDate: param.startDate,
-            endDate: param.endDate
+			startDate:param.startDate,
+        	endDate:param.endDate,
+            variableDbId: param.variable.id
         };
 
         try {
 			
 			//const listVariables = await axios.get('http://172.16.30.144:5000/api/Cooker/GetAllVariableDb');
-			const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetAllVariableDb' + querystring.stringify(params));		
+			const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetHistVariable?' + querystring.stringify(params));		
 			return listVariables.data;
 		} catch (err) {
 			// Handle Error Here
