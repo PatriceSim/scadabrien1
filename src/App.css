@@ -79,6 +79,10 @@
   content: '\e70f';
 }
 
+#dockSidebar .tank::before {
+  content: '\eb3e';
+}
+
 .e-sidebar .expand::before {
   content: '\e10f';
 }
@@ -229,3 +233,54 @@ height: 100%;
     padding: 0px;
     background-color: #f0f3f7;
 }
+
+/***********************************************************Page Tank********************************************************************/
+.tankPage{
+  border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #f0f3f7;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+
+}
+
+.tankGrid1{
+  position:relative;
+  grid-column: 1/2;
+  grid-row: 1 / 2;
+  background-color: #008cff;
+}
+.tankGrid2{
+  position:relative;
+  grid-column: 2/3;
+  grid-row: 1 / 2;
+}
+.tankGrid3{
+  position:relative;
+  grid-column: 3/4;
+  grid-row: 1 / 2;
+}
+.tankGrid4{
+  position:relative;
+  grid-column: 4/5;
+  grid-row: 1 / 2;
+}
+
+.tankLabel{
+  position:relative;
+  width: 100px;
+  height: 20px;
+  
+}
+
+
+.tankGrid1{
+  position:relative;
+  width: 150px;
+  height: 150px;
+  }

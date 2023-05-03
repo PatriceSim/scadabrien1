@@ -91,7 +91,7 @@ const Graphique =()=>{
                            select={handleSelectedVariable} width={350} style={{fontSize:16, textAlign:'center'}}/>
         <div>
             <ButtonComponent onClick={handleClick}>Validez</ButtonComponent>
-            <ButtonComponent onClick={handleTest}>test</ButtonComponent>
+            
         </div>
         
         <div>
