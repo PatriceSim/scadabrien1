@@ -6,8 +6,8 @@ const UseCallApi=async(param:any) =>{
 
     if(param.action=='getAllVariables') {
         try {
-			//const listVariables = await axios.get('http://172.16.30.144:5000/api/Cooker/GetAllVariableDb');
-			const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetAllVariableDb');		
+			const listVariables = await axios.get('http://172.16.30.125:5000/api/Cooker/GetAllVariableDb');
+			//const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetAllVariableDb');		
 			return listVariables.data;
 		} catch (err) {
 			// Handle Error Here
@@ -26,8 +26,8 @@ const UseCallApi=async(param:any) =>{
 
         try {
 			
-			//const listVariables = await axios.get('http://172.16.30.144:5000/api/Cooker/GetAllVariableDb');
-			const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetHistVariable?' + querystring.stringify(params));		
+			const listVariables = await axios.get('http://172.16.30.125:5000/api/Cooker/GetHistVariable?' + querystring.stringify(params));
+			//const listVariables = await axios.get('https://localhost:7246/api/Cooker/GetHistVariable?' + querystring.stringify(params));		
 			return listVariables.data;
 		} catch (err) {
 			// Handle Error Here
