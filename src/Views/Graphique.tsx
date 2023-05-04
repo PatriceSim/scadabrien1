@@ -1,9 +1,9 @@
 import { DateTimePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import { ComboBoxComponent } from '@syncfusion/ej2-react-dropdowns';
+import { ListViewComponent } from '@syncfusion/ej2-react-lists';
 import { useState,useMemo} from 'react'
 import UseCallApi from '../Hooks/UseCallApi'
-import { isDate } from 'util/types';
 import {
     ChartComponent,
     SeriesCollectionDirective,
@@ -87,8 +87,10 @@ const Graphique =()=>{
             <DateTimePickerComponent onChange={handleEndDate} format="yyyy/MM/dd HH:mm" width={300}
             style={{fontSize:16, textAlign:'center'}}/>
         </div>
-        <ComboBoxComponent dataSource={variables as any} placeholder="Select une variable" fields={fieldsVariable}  
-                           select={handleSelectedVariable} width={350} style={{fontSize:16, textAlign:'center'}}/>
+        {/* <ComboBoxComponent dataSource={variables as any} placeholder="Select une variable" fields={fieldsVariable}  
+                           select={handleSelectedVariable} width={350} style={{fontSize:16, textAlign:'center'}}/> */}
+        <ListViewComponent dataSource={variables as any} showCheckBox={true} headerTitle='TO DO LIst' showHeader={true}
+        fields={fieldsVariable} style={{fontSize:16, textAlign:'center'}} width={350}/>
         <div>
             <ButtonComponent onClick={handleClick}>Validez</ButtonComponent>
             

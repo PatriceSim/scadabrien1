@@ -8,6 +8,7 @@
     "@syncfusion/ej2-react-charts": "^21.1.41",
     "@syncfusion/ej2-react-dropdowns": "^21.1.41",
     "@syncfusion/ej2-react-grids": "^21.1.41",
+    "@syncfusion/ej2-react-lists": "^21.2.3",
     "@syncfusion/ej2-react-navigations": "^21.1.39",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
